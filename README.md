@@ -1,7 +1,9 @@
-# RPharma2018packages
-Collection of favorite packages from RPharma conf
+# RPharma conference 2018 - my take away packages
 
-**This is a packrat project** Please use packrat to work here
+Collection of favorite packages from RPharma conference that I got from
+different presentations at the conference.
+
+**This is a packrat project** Please use [packrat](https://rstudio.github.io/packrat) to work here
 
 ## Package list
 
@@ -9,7 +11,7 @@ Collection of favorite packages from RPharma conf
 - [Archivist](#archivist) - Session manager
 - [logR](#logr) - Extended logging solution
 - [Diffdf](#diffdf) - data.frame comparison
-- Yardstick - linear model 
+- [Yardstick](#yardstick) - linear model 
 - RInno - Shiny Apps as Windows Applications
 
 ## Packrat
