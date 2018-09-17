@@ -22,9 +22,12 @@ at the [RStudio blog describing](https://rstudio.github.io/packrat/commands.html
 
 ```
 install.packages("packrat")
-packrat::unbundle(“packrat/bundles/…..tar.gz”)
+packrat::unbundle(“packrat/bundles/RPharma2018packages-2018-09-17.tar.gz”)
 
 ```
+
+From the unbundle process you will get the whole project including a library
+with all needed packages for this tutorial installed.
 
 ## Archivist
 
