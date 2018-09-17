@@ -150,6 +150,68 @@ diffdf(iris, iris2)
 
 ```
 
+Outcome:
+```
+Differences found between the objects!
+
+A summary is given below.
+
+There are columns in BASE and COMPARE with different classes !!
+All rows are shown in table below
+
+  ==================================
+   VARIABLE  CLASS.BASE  CLASS.COMP 
+  ----------------------------------
+   Species     factor    some class 
+  ----------------------------------
+
+There are columns in COMPARE that are not in BASE !!
+All rows are shown in table below
+
+  =========
+   COLUMNS 
+  ---------
+   new_var 
+  ---------
+
+Not all Values Compared Equal
+All rows are shown in table below
+
+  =================================
+     Variable    No of Differences 
+  ---------------------------------
+   Sepal.Length          1         
+   Sepal.Width           1         
+   Petal.Length          1         
+  ---------------------------------
+
+
+All rows are shown in table below
+
+  ============================================
+     VARIABLE    ..ROWNUMBER..  BASE  COMPARE 
+  --------------------------------------------
+   Sepal.Length        1        5.1      1    
+  --------------------------------------------
+
+
+All rows are shown in table below
+
+  ===========================================
+    VARIABLE    ..ROWNUMBER..  BASE  COMPARE 
+  -------------------------------------------
+   Sepal.Width        2         3       4    
+  -------------------------------------------
+
+
+All rows are shown in table below
+
+  ============================================
+     VARIABLE    ..ROWNUMBER..  BASE  COMPARE 
+  --------------------------------------------
+   Petal.Length        3        1.3      9    
+  --------------------------------------------
+```
 ## Yardstick
 
 yardstick is a package to estimate how well models are working using tidy data principles. The package webpage is https://tidymodels.github.io/yardstick/ for more information.
@@ -194,3 +256,23 @@ two_class_example %>% rmse(Class1, Class2)
 ```
 
 ## RInno
+
+### Prequisites
+```
+require(RInno)
+
+RInno::install_inno()
+```
+
+**Important** Fix the path in /app/utils/regpaths.json
+
+## Build app
+
+This example allows you to build a simple shiny App executable in Windows
+
+```
+create_app(app_name = "My App", app_dir = "app")
+compile_iss()
+```
+
+The App can be started using the "My App.bat" file located in the `app` folder afterwards.
