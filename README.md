@@ -8,7 +8,7 @@ Collection of favorite packages from RPharma conf
 - [Packrat](#packrat) - package dependency manager
 - [Archivist](#archivist) - Session manager
 - [logR](#logr) - Extended logging solution
-- Diffdf - data.frame comparison
+- [Diffdf](#diffdf) - data.frame comparison
 - Yardstick - linear model 
 - RInno - Shiny Apps as Windows Applications
 
@@ -129,4 +129,66 @@ logR(Sys.sleep(5))
 logR_dump()
 ```
 
+## diffdf
 
+diffdf is a powerful package by colleges from Roche to compare two data.frames
+
+It not only compares the values inside the data.frames but also labels of rows
+and columns.
+
+The output is upto now given as pretty human readable.
+
+```
+library(diffdf)
+iris2 <- iris
+for (i in 1:3) iris2[i,i] <- i^2
+iris2$new_var <- "hello"
+class(iris2$Species) <- "some class"
+diffdf(iris, iris2)
+
+```
+
+## Yardstick
+
+yardstick is a package to estimate how well models are working using tidy data principles. The package webpage is https://tidymodels.github.io/yardstick/ for more information.
+
+```
+library(yardstick)
+library(dplyr)
+
+head(two_class_example)
+```
+
+```
+##    truth  Class1   Class2 predicted
+## 1 Class2 0.00359 0.996411    Class2
+## 2 Class1 0.67862 0.321379    Class1
+## 3 Class2 0.11089 0.889106    Class2
+## 4 Class1 0.73516 0.264838    Class1
+## 5 Class2 0.01624 0.983760    Class2
+## 6 Class1 0.99928 0.000725    Class1
+```
+
+You can use a dplyr-like syntax to compute common performance characteristics of the model and get them back in a data frame:
+
+```
+metrics(two_class_example, truth, predicted)
+```
+
+```
+## # A tibble: 1 x 1
+##   accuracy
+##      <dbl>
+## 1    0.838
+```
+or
+
+```
+two_class_example %>% rmse(Class1, Class2)
+```
+
+```
+[1] 0.8317232
+```
+
+## RInno
