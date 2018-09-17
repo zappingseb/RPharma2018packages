@@ -266,7 +266,7 @@ RInno::install_inno()
 
 **Important** Fix the path in /app/utils/regpaths.json
 
-## Build app
+### Build app
 
 This example allows you to build a simple shiny App executable in Windows
 
