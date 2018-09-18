@@ -1,6 +1,6 @@
 # RPharma conference 2018 - my take away packages
 
-Collection of favorite packages from RPharma conference that I got from
+Collection of favorite packages from [R/Pharma](www.rinpharma.com) conference that I got from
 different presentations at the conference.
 
 **This is a packrat project** Please use [packrat](https://rstudio.github.io/packrat) to work here
