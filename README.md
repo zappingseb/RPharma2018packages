@@ -7,12 +7,13 @@ different presentations at the conference.
 
 ## Package list
 
-- [Packrat](#packrat) - package dependency manager
-- [Archivist](#archivist) - Session manager
-- [logR](#logr) - Extended logging solution
-- [Diffdf](#diffdf) - data.frame comparison
-- [Yardstick](#yardstick) - linear model 
-- RInno - Shiny Apps as Windows Applications
+- [Packrat](#packrat) - package dependency manager for R projects
+- [Archivist](#archivist) - Object storage solution: make R workspace go into files
+- [logR](#logr) - Extended logging solution using PostGreSQL
+- [Diffdf](#diffdf) - data.frame comparison made better
+- [Yardstick](#yardstick) - A package containing all measures you might need to evaluate the
+	predictive power of a statistical model
+- [RInno](#rinno) - Shiny Apps as Windows Applications
 
 ## Packrat
 
