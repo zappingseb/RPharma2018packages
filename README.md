@@ -19,7 +19,15 @@ different presentations at the conference.
 
 Packrat allows you to store all packages you are using for a certain session/project. Packrat is also
 used for this project to store the packages shown here. The main guide for packrat can be found
-at the [RStudio blog describing](https://rstudio.github.io/packrat/commands.html) it
+at the [RStudio blog describing](https://rstudio.github.io/packrat/commands.html) it.
+
+You may want to start copying this Project from github by downloading
+the `.zip` or cloning it. Afterwards please use an R-3.4.x version
+and navigate into the project directory.
+
+Inside the directory you can find a packrat bundle of this project. The
+following command lines will unbundle it, copy the project to your
+Deskop (just under Windows) and navigate into the project.
 
 ```
 install.packages("packrat")
@@ -29,11 +37,17 @@ setwd(paste0("C:/Users/",Sys.info()["login"],"/Desktop/RPharma2018packages"))
 ```
 
 From the unbundle process you will get the whole project including a library
-with all needed packages for this tutorial installed.
+with all needed packages for this tutorial installed. Now your good
+to go to run the tutorial.
+
+You've now already seen a huge advantage of packrat. It allows you to share
+a whole project, including all libraries, with a co-worker with a 
+tar.gz file that has a size of around 50-100 MB.
+
 
 ## Archivist
 
-an R package designed to improve the management of results
+An R package designed to improve the management of results
 of data analysis. Key functionalities of this package include: 
 
 (i) management of local
@@ -90,7 +104,7 @@ print(df_test[1,1]==2)
 
 ## logR
 
-### Prequisites
+### Prerequisites
 
 First you need to install PostGres via
 
@@ -143,7 +157,7 @@ diffdf is a powerful package by colleges from Roche to compare two data.frames
 It not only compares the values inside the data.frames but also labels of rows
 and columns.
 
-The output is upto now given as pretty human readable.
+The output is up-to now given as pretty human readable command line print.
 
 ```
 library(diffdf)
@@ -262,10 +276,9 @@ two_class_example %>% rmse(Class1, Class2)
 
 ## RInno
 
-### Prequisites
+### Prerequisites
 ```
 require(RInno)
-
 RInno::install_inno()
 ```
 
@@ -273,7 +286,8 @@ RInno::install_inno()
 
 ### Build app
 
-This example allows you to build a simple shiny App executable in Windows
+This example allows you to build a simple shiny App executable in Windows.
+Inside this repo there already an example app from RStudio stored.
 
 ```
 create_app(app_name = "My App", app_dir = "app")
