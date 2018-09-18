@@ -23,7 +23,7 @@ at the [RStudio blog describing](https://rstudio.github.io/packrat/commands.html
 
 ```
 install.packages("packrat")
-packrat::unbundle(“packrat/bundles/RPharma2018packages-2018-09-17.tar.gz”)
+packrat::unbundle(bundle=“packrat/bundles/RPharma2018packages-2018-09-17.tar.gz”, where=paste0("C:/Users/",Sys.info()["login"],"/Desktop"))
 
 ```
 
